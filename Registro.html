@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Enlace a estilos.css -->
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
-<body>
+<body class="body_index ">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="text-center mb-4">
+                    <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-width: 50%;">
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="text-center" style="font-family: Arial, sans-serif; color: #feb47b; font-size: x-large">NUEVO REGISTRO</p>
+                        <form class="two-column-form">
+                            <div class="form-group">
+                                <label for="nombre" style="color:#ffbd59; font-family: Arial, sans-serif;">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidos" style="color:#ffbd59; font-family: Arial, sans-serif;">Apellidos</label>
+                                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono" style="color:#ffbd59; font-family: Arial, sans-serif;">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="username" style="color:#ffbd59; font-family: Arial, sans-serif;">Usuario</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" style="color:#ffbd59; font-family: Arial, sans-serif;">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-email" style="color:#ffbd59; font-family: Arial, sans-serif;">Repetir correo electrónico</label>
+                                <input type="email" class="form-control" id="confirm-email" name="confirm-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" style="color:#ffbd59; font-family: Arial, sans-serif;">Contraseña</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password" style="color:#ffbd59; font-family: Arial, sans-serif;">Repetir contraseña</label>
+                                <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                                <label class="form-check-label" for="terms" style="color:#ffbd59; font-family: Arial, sans-serif;">He leído y acepto los términos y condiciones de uso.</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">¡ BIENVENIDO !</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
